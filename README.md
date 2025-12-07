@@ -37,20 +37,3 @@
 
 ---
 
-## 🛠️ 설치 및 실행
-
-```bash
-# 1. 가상환경 생성 및 패키지 설치
-conda create -n helpbuddy_env python=3.10
-conda activate helpbuddy_env
-pip install solara openai pandas
-
-# 2. .env파일에 API_KEY 등록
-  한국어 번역을 위한 NAVER_API와 chatbot 이용을 위한 OPENAI_API_KEY 입력
-  입력 예시:
-  CLIENT_ID="YOUR_NAVER_API_CLIENT_ID"
-  CLIENT_SECRET="YOUR_NAVER_API_CLIENT_SECRET"
-  OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
- 
-# 3. 실행
-solara run help_buddy_chatbot.py
